@@ -1,0 +1,43 @@
+name: Propose a word
+description: Add a Canadian French term, or flag one the OQLF advises against
+title: "term: "
+labels: ["term"]
+body:
+  - type: input
+    id: word
+    attributes:
+      label: Word
+      description: The word as it should appear, with accents
+      placeholder: courriel
+    validations:
+      required: true
+  - type: dropdown
+    id: change
+    attributes:
+      label: Change
+      options:
+        - Accept the word
+        - Flag the word
+        - Remove the word
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Link to the GDT, BDL or TERMIUM Plus record, not a search page (except TERMIUM)
+      placeholder: https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/...
+    validations:
+      required: true
+  - type: input
+    id: status
+    attributes:
+      label: Status in the source
+      description: For example terme privilégié, terme accepté, terme déconseillé, correct
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Where cspell flags the word or accepts it wrongly, and the recommended term for a flagged word

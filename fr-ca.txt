@@ -1,0 +1,29 @@
+# Canadian French terms missing from @cspell/dict-fr-fr.
+# Every word must have a row in SOURCES.md linking its OQLF GDT, BDL or
+# TERMIUM Plus record. A word that only looks right does not belong here.
+antipourriel
+artéfact
+artéfacts
+auditabilité
+authentification
+autoréparant
+autoréparante
+Bélarus
+cyberincident
+cyberincidents
+Échap
+entiercement
+intersites
+microsection
+multifacteur
+multiplateforme
+multiplateformes
+multiutilisateur
+récupérabilité
+redirecteur
+refactorisation
+refactoriser
+remappage
+remappe
+remapper
+télécom

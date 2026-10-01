@@ -1,0 +1,22 @@
+name: Report a problem
+description: The dictionary or the Hugo preset behaves unexpectedly
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened
+      description: The command you ran, the file content cspell checked, and its output
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: cspell version, and the commit or tag of this package

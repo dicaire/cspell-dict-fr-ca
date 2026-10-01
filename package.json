@@ -1,0 +1,48 @@
+{
+  "name": "cspell-dict-fr-ca",
+  "version": "0.1.0",
+  "description": "Canadian French terms for cspell, each verified in the OQLF Grand dictionnaire terminologique or TERMIUM Plus",
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "fr-CA",
+    "Canadian French",
+    "français canadien",
+    "OQLF",
+    "TERMIUM",
+    "dictionary",
+    "spelling"
+  ],
+  "homepage": "https://github.com/dicaire/cspell-dict-fr-ca#readme",
+  "bugs": {
+    "url": "https://github.com/dicaire/cspell-dict-fr-ca/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dicaire/cspell-dict-fr-ca.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Benoît H. Dicaire",
+    "email": "code@Dicaire.com",
+    "url": "https://BHDicaire.com"
+  },
+  "files": [
+    "cspell-ext.json",
+    "fr-ca.txt",
+    "presets/",
+    "SOURCES.md"
+  ],
+  "scripts": {
+    "test": "node scripts/check-sources.mjs && node scripts/test-dictionary.mjs"
+  },
+  "dependencies": {
+    "@cspell/dict-fr-fr": "^2.3.2"
+  },
+  "devDependencies": {
+    "cspell": "^10.0.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
