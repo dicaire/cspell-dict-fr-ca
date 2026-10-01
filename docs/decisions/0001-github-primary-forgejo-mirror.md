@@ -18,6 +18,8 @@ GitHub (`dicaire/cspell-dict-fr-ca`) is the primary repository. All commits, iss
 
 Forgejo keeps a pull mirror of the GitHub repository as a backup. The mirror is read-only: nothing is committed to it, and it is not used to install the package.
 
+The mirror is `https://git.d5e.dev/bhdicaire/cspell-dict-fr-ca`, public, synced every 24 hours, created on 2026-10-01.
+
 ## Consequences
 
 - Contributions land where they are reviewed and merged; no change is carried by hand from a mirror back to the primary
