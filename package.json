@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-fr-ca",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Canadian French terms for cspell, each verified in the OQLF Grand dictionnaire terminologique or TERMIUM Plus",
   "keywords": [
     "cspell",

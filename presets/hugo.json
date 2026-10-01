@@ -2,12 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
   "name": "Canadian French for bilingual Hugo sites",
-  "description": "Checks name.fr.md, *.fr.yml and fr.toml files in French and English, and skips code, URLs and identifiers",
+  "description": "Checks name.fr.md, *.fr.yml and fr.toml files in French and English, and skips code, URLs and identifiers in every Markdown, YAML and TOML file",
   "import": ["../cspell-ext.json"],
   "overrides": [
     {
-      "filename": ["**/*.fr.md", "**/*.fr.yml", "**/fr.toml"],
-      "language": "fr,en",
+      "filename": ["**/*.md", "**/*.yml", "**/*.toml"],
       "ignoreRegExpList": [
         "/^\\s*```[\\s\\S]*?^\\s*```/gm",
         "/`[^`\\n]+`/g",
@@ -18,6 +17,10 @@
         "/\\[[\\w-]+(\\.[\\w-]+)+\\]/g",
         "/^\\[[\\w.]+\\]$/gm"
       ]
+    },
+    {
+      "filename": ["**/*.fr.md", "**/*.fr.yml", "**/fr.toml"],
+      "language": "fr,en"
     }
   ]
 }

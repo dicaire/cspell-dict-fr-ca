@@ -8,7 +8,7 @@ import { join } from "node:path";
 const cspell = join("node_modules", ".bin", "cspell");
 let failed = false;
 
-function run(files) {
+function run(files, config = "test/cspell.json") {
   const result = spawnSync(
     cspell,
     [
@@ -16,7 +16,7 @@ function run(files) {
       "--no-summary",
       "--no-must-find-files",
       "--config",
-      "test/cspell.json",
+      config,
       ...files,
     ],
     {
@@ -67,6 +67,13 @@ result = run(["test/fixtures/accepted.fr.md"]);
 expect(
   result.status === 0,
   "French prose, code blocks, front matter and anchors pass",
+  result.output,
+);
+
+result = run(["test/fixtures/code.en.md"], "test/cspell-flag-color.json");
+expect(
+  result.status === 0,
+  "code, slugs and anchors are skipped in English files too",
   result.output,
 );
 

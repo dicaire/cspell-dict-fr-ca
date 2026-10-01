@@ -33,7 +33,7 @@ This also imports `@cspell/dict-fr-fr`, so you do not need to add it separately.
 
 ### Bilingual Hugo sites
 
-For sites that pair `name.en.md` with `name.fr.md`, the Hugo preset checks `*.fr.md`, `*.fr.yml` and `fr.toml` in French and English, and skips content that is not prose:
+For sites that pair `name.en.md` with `name.fr.md`, the Hugo preset checks `*.fr.md`, `*.fr.yml` and `fr.toml` in French and English. In every Markdown, YAML and TOML file, in both languages, it skips content that is not prose:
 
 - fenced code blocks and inline code
 - `slug`, `url`, `tags`, `layout`, `collection`, `project` and `implementation` front matter, and alias paths
